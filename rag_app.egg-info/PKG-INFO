@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: rag-app
+Version: 0.1.0
+Summary: A RAG application for document processing and summarization.
+Home-page: https://github.com/jcarhart1/RAG-GPT
+Author: Joe Carhart
+Author-email: carhart77@gmail.com
