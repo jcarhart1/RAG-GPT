@@ -29,6 +29,8 @@ client = OpenAI()
 
 APPCFG = LoadConfig()
 
+print(f"DEBUG: persist_directory = {APPCFG.persist_directory}")
+print(f"DEBUG: custom_persist_directory = {APPCFG.custom_persist_directory}")
 
 with open("configs/app_config.yml") as cfg:
     app_config = yaml.load(cfg, Loader=yaml.FullLoader)
@@ -36,7 +38,10 @@ with open("configs/app_config.yml") as cfg:
 # Load the embedding function
 embedding = OpenAIEmbeddings()
 # Load the vector database
-vectordb = Chroma(persist_directory=APPCFG.persist_directory,
+# vectordb = Chroma(persist_directory=APPCFG.persist_directory,
+#                   embedding_function=embedding)
+
+vectordb = Chroma(persist_directory="data/vectordb/processed/chroma/",
                   embedding_function=embedding)
 
 print("Number of vectors in vectordb:", vectordb._collection.count())
