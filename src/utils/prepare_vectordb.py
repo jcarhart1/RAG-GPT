@@ -10,7 +10,7 @@ from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 from pypdf.errors import PdfStreamError  # Import the error to handle corrupted PDFs
 
-# os.makedirs('/Users/jcarhart/Desktop/code_personal_use/LLM-Zero-to-Hundred/RAG-GPT/data/vectordb/uploaded/chroma', exist_ok=True)
+os.makedirs('/Users/jcarhart/Desktop/code-personal/RAG-GPT/data/vectordb/uploaded/chroma', exist_ok=True)
 load_dotenv()  # This will load the .env file
 
 
