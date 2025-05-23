@@ -120,7 +120,7 @@ class LoadConfig:
 
         OPENAI_API_TYPE = os.getenv("OPENAI_API_TYPE")
         OPENAI_API_BASE = os.getenv("OPENAI_API_BASE")
-        OPENAI_API_VERSION = os.getenv("OPENAI_API_VERSION")
+        # OPENAI_API_VERSION = os.getenv("OPENAI_API_VERSION")
         OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
     def create_directory(self, directory_path: str):

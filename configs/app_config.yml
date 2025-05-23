@@ -3,6 +3,7 @@ directories:
   data_directory_2: data/docs_2
   persist_directory: data/vectordb/processed/chroma/
   custom_persist_directory: data/vectordb/uploaded/chroma/
+  metadata_file: data/metadata.json
 
 embedding_model_config:
   engine: "text-embedding-ada-002"
